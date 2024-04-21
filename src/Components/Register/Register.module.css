@@ -1,0 +1,252 @@
+body.active-model {
+    overflow-y: hidden;
+
+  }
+  
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+  
+  .overlay {
+    background: rgba(49, 49, 49, 0.8);
+  }
+  .modelcontent {
+    position: fixed;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30vw;
+    z-index: 1;
+  }
+  .modelinnercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+  }
+  .closeicon {
+    height: 5vh;
+    width: 5vh;
+    position: relative;
+    left: 13.5vw;
+    bottom: 4vh;
+    transition: 0.2s;
+  }
+  .closeicon:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+  .closeicon:active {
+    scale: 0.95;
+  }
+  
+  .eyeicon {
+    height: 2vh;
+    position: relative;
+    right: 2.5vh;
+    top: 1.5vh;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .eyeicon:active {
+    scale: 0.9;
+  }
+  .logindetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    position: relative;
+    bottom: 3vh;
+  }
+  .logindetails > div:nth-of-type(2) {
+    display: flex;
+    gap: 4vh;
+  }
+  .logindetails > div:nth-of-type(3) {
+    display: flex;
+    gap: 1vh;
+  }
+  .logindetails > div:nth-of-type(3) > input {
+    position: relative;
+    left: 3.4vh;
+    height: 4vh;
+    width: 14vw;
+  }
+  .logindetails > div:nth-of-type(2) > input {
+    position: relative;
+    height: 4vh;
+    width: 14vw;
+  }
+  .logindetails > div:nth-of-type(2) > label,
+  .logindetails > div:nth-of-type(3) > label {
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .loginbutton {
+    background-color: #73abff;
+    border: none;
+    width: 8vw;
+    height: 5vh;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .loginbutton:hover {
+    background-color: #5297ff;
+  }
+  .loginbutton:active {
+    scale: 0.9;
+  }
+  .errormessage {
+    color: red;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: 500;
+      width: fit-content;
+      height: auto;
+  
+  }
+
+  @media only screen and (max-width: 767px) {
+    .overlay {
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 3;
+    }
+  
+    .overlay {
+      background: rgba(49, 49, 49, 0.8);
+    }
+    .modelcontent {
+      position: fixed;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100vw;
+      z-index: 3;
+    }
+    .modelinnercontent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3vh;
+    }
+    .closeicon {
+      height: 5vh;
+      width: 5vh;
+      position: relative;
+      left: 42.5vw;
+      bottom: 4vh;
+      transition: 0.2s;
+    }
+    .closeicon:hover {
+      scale: 1.1;
+      cursor: pointer;
+    }
+    .closeicon:active {
+      scale: 0.95;
+    }
+  
+    .eyeicon {
+      height: 2vh;
+      position: relative;
+      right: 2.5vh;
+      top: 1.1vh;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .eyeicon:active {
+      scale: 0.9;
+    }
+    .logindetails {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3vh;
+      position: relative;
+      bottom: 3vh;
+    }
+    .logindetails > div:nth-of-type(2) {
+      display: flex;
+      gap: 4vh;
+    }
+    .logindetails > div:nth-of-type(3) {
+      display: flex;
+      gap: 1vh;
+    }
+    .logindetails > div:nth-of-type(3) > input {
+      position: relative;
+      left: 3.4vh;
+      height: 4vh;
+      width: 54vw;
+    }
+    .logindetails > div:nth-of-type(2) > input {
+      position: relative;
+      height: 4vh;
+      width: 54vw;
+    }
+    .logindetails > div:nth-of-type(2) > label,
+    .logindetails > div:nth-of-type(3) > label {
+      font-weight: 700;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .loginbutton {
+      background-color: #73abff;
+      border: none;
+      width: 50vw;
+      height: 5vh;
+      border-radius: 20px;
+      font-weight: 700;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+  
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .loginbutton:hover {
+      background-color: #5297ff;
+    }
+    .loginbutton:active {
+      scale: 0.9;
+    }
+    .errormessage {
+      color: red;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: 500;
+      width: fit-content;
+      height: auto;
+    }
+  }
+  
+  

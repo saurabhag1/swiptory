@@ -1,0 +1,318 @@
+.Story {
+  height: auto;
+  width: auto;
+  margin: 2vw;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.story {
+  height: 60vh;
+  width: 20vw;
+  border-radius: 10px;
+  transition: 0.1s;
+  overflow: hidden;
+}
+.story > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.1s;
+  overflow: hidden;
+}
+
+.story:hover {
+  scale: 1.02;
+}
+.story:active {
+  scale: 1;
+}
+.storyheading {
+  position: relative;
+  bottom: 20vh;
+  left: 2vw;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.storyheading > h2 {
+  position: relative;
+  right: 3vh;
+  color: aliceblue;
+}
+.storyheading > h4 {
+  position: relative;
+  right: 3vh;
+  width: 19vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.TopStoriesFood {
+  display: flex;
+  gap: 4vw;
+  position: relative;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.Mainheading {
+  width: fit-content;
+  position: relative;
+  margin: 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  left: 35vw;
+}
+.seemorebutton {
+  background-color: #ff7373;
+  border: none;
+  border-radius: 20px;
+  height: 6vh;
+  width: 8vw;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  position: relative;
+  margin-top: 2vh;
+  left: 42vw;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.seemorebutton:active {
+  scale: 1.05;
+}
+.seemorebutton:hover {
+  background-color: #fc4b4b;
+}
+.nostories {
+  color: #8e8e8e;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  position: relative;
+  margin: 5vh;
+  left: 36vw;
+}
+.editbutton {
+  background-color: white;
+  position: relative;
+  width: 6vw;
+  height: 4vh;
+  border: none;
+  border-radius: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  bottom: 3vh;
+  left: 6vw;
+  z-index: 0;
+  cursor: pointer;
+  transition: 0.1s;
+  text-align: center;
+  display: flex;
+}
+.editbutton:hover {
+  background-color: rgb(250, 210, 210);
+}
+.editbutton:active {
+  scale: 0.95;
+}
+.YourStory {
+  width: fit-content;
+  position: relative;
+  margin: 3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  left: 40vw;
+}
+.editbutton > img {
+  position: relative;
+  left: 1vh;
+}
+
+.editbutton > p {
+  position: relative;
+  left: 2vh;
+  top: 0.5vh;
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 767px) {
+
+  .Story {
+    height: auto;
+    width: auto;
+    margin: 2vw;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .story {
+    height: 60vh;
+    width: 95vw;
+    border-radius: 10px;
+    transition: 0.1s;
+    overflow: hidden;
+    
+  }
+  .story > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.1s;
+    overflow: hidden;
+  }
+  
+  .story:hover {
+    scale: 1.02;
+  }
+  .story:active {
+    scale: 1;
+  }
+  .storyheading {
+    position: relative;
+    bottom: 13vh;
+    left: 8vw;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+  }
+  .storyheading > h2 {
+    position: relative;
+    right: 3vh;
+    color: aliceblue;
+  }
+  .storyheading > h4 {
+    position: relative;
+    right: 3vh;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .TopStoriesFood {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    position: relative;
+    width: auto;
+    flex-wrap: wrap;
+  }
+  
+  .Mainheading {
+    width: fit-content;
+    position: relative;
+    margin: 3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    left: 0vw;
+  }
+  .seemorebutton {
+    background-color: #ff7373;
+    border: none;
+    border-radius: 20px;
+    height: 6vh;
+    width: 30vw;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 34vw;
+    margin-top: 2vh;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .seemorebutton:active {
+    scale: 1.05;
+  }
+  .seemorebutton:hover {
+    background-color: #fc4b4b;
+  }
+  .nostories {
+    color: #8e8e8e;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    position: relative;
+    margin: 5vh;
+    left: 4vw;
+  }
+  .editbutton {
+    background-color: white;
+    position: relative;
+    width: 25vw;
+    height: 4vh;
+    border: none;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    bottom: 3vh;
+    left: 32vw;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.1s;
+    text-align: center;
+    display: flex;
+  }
+  .editbutton:hover {
+    background-color: rgb(250, 210, 210);
+  }
+  .editbutton:active {
+    scale: 0.95;
+  }
+  .YourStory {
+    width: fit-content;
+    position: relative;
+    margin: 3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    left: 25vw;
+  }
+  .editbutton > img {
+    position: relative;
+    left: 1vh;
+  }
+  
+  .editbutton > p {
+    position: relative;
+    left: 2vh;
+    top: 0.5vh;
+  }
+
+
+}

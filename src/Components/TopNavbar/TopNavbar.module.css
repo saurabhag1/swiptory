@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+}
+
+.navbar {
+  height: 10vh;
+  width: auto;
+  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.heading {
+  font-family: sans-serif;
+  position: relative;
+  left: 3vw;
+  top: 2vh;
+  font-weight: 700;
+  width: min-content;
+}
+.heading:hover{
+    cursor: pointer;
+}
+.buttons {
+  display: flex;
+  gap: 2vh;
+  position: relative;
+  left: 78vw;
+  bottom: 2vh;
+  width: min-content;
+}
+.Registerbutton {
+  background-color: #ff7373;
+  border: none;
+  border-radius: 20px;
+  height: 5.5vh;
+  color: white;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 9vw;
+  transition: 0.3s;
+}
+
+.Loginbutton {
+  background-color: #73abff;
+  border: none;
+  border-radius: 20px;
+  height: 5.5vh;
+  color: white;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 9vw;
+  transition: 0.2s;
+}
+.Registerbutton:hover {
+  background-color: #fd4545;
+  cursor: pointer;
+}
+.Loginbutton:hover {
+  cursor: pointer;
+  background-color: #4089f7;
+}
+.Registerbutton:active,
+.Loginbutton:active {
+  scale: 0.9;
+}
+
+.afterlogginbutton {
+  display: flex;
+  gap: 2vw;
+  position: relative;
+  width: min-content;
+  left: 68vw;
+  bottom: 2vh;
+  height: min-content;
+}
+.afterlogginbutton > img {
+  width: min-content;
+  position: relative;
+  bottom: 1.8vh;
+  scale: 0.8;
+  margin: 0;
+}
+
+.Bookmarkbutton {
+  display: flex;
+  gap: 1.5vh;
+  background-color: #ff7373;
+  border: none;
+  height: 5.5vh;
+  border-radius: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  width: fit-content;
+  padding-left: 1.5vh;
+  transition: 0.2s;
+}
+.Bookmarkbutton > img {
+  height: 2.5vh;
+  position: relative;
+  top: 1vh;
+}
+.Bookmarkbutton > p {
+  position: relative;
+  top: 0.7vh;
+  right: 0.5vh;
+}
+
+.Addstorybutton {
+  background-color: #ff7373;
+  border: none;
+  height: 5.5vh;
+  border-radius: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  width: 8vw;
+  transition: 0.2s;
+}
+.Bookmarkbutton:hover,
+.Addstorybutton:hover {
+  background-color: #fd5050;
+  cursor: pointer;
+}
+.Bookmarkbutton:active,
+.Addstorybutton:active {
+  scale: 0.9;
+}
+
+.sidemenu {
+  height: 4vh;
+  width: 5vh;
+  position: relative;
+  top: 1vh;
+  transition: 0.22s;
+}
+.sidemenu:hover {
+  cursor: pointer;
+  scale: 0.87;
+}
+.sidemenu:active {
+  scale: 0.7;
+}

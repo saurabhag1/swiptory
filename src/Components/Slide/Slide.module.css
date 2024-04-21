@@ -1,0 +1,359 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.overlay {
+  background: rgba(22, 22, 22, 0.8);
+}
+.modelcontent {
+  position: fixed;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: auto;
+  z-index: 2;
+
+  box-shadow: 0 0 12px 8px rgba(223, 217, 217, 0.2);
+}
+.story {
+  height: 80vh;
+  width: 26vw;
+  border-radius: 10px;
+  transition: 0.1s;
+  overflow: hidden;
+}
+.story > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  transition: 0.1s;
+  overflow: hidden;
+}
+.storyheading {
+  position: relative;
+  color: white;
+  bottom: 25vh;
+  left: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.storyheading > h2 {
+  position: relative;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.storyheading > h4 {
+  position: relative;
+  width: 19vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.share {
+  position: relative;
+  bottom: 78vh;
+  left: 22.5vw;
+  transition: 0.1s;
+  cursor: pointer;
+  z-index: 1;
+}
+.share:active {
+  scale: 0.9;
+}
+.like {
+  position: relative;
+  bottom: 8vh;
+  left: 18.5vw;
+  transition: 0.1s;
+  cursor: pointer;
+  z-index: 1;
+  height: 4vh;
+}
+.like:active {
+  scale: 0.9;
+}
+.unlike {
+  position: relative;
+  bottom: 8vh;
+  left: 18.5vw;
+  transition: 0.1s;
+  cursor: pointer;
+  z-index: 1;
+  height: 4vh;
+}
+.unlike:active {
+  scale: 0.9;
+}
+.bookmark {
+  position: relative;
+  bottom: 7vh;
+  right: 2.5vw;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.1s;
+}
+.bookmark:active {
+  scale: 0.9;
+}
+
+.close {
+  position: relative;
+  bottom: 79vh;
+  right: 4vw;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.1s;
+}
+.close:active {
+  scale: 0.9;
+}
+.likecount {
+  position: relative;
+  bottom: 11vh;
+  font-size: medium;
+  left: 48vh;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.1s;
+  color: aliceblue;
+  z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.previous {
+  position: relative;
+  top: 45vh;
+  left: 29vw;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.previous:active {
+  scale: 0.9;
+}
+.next {
+  position: absolute;
+  right: 31vw;
+  top: 45vh;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.next:active {
+  scale: 0.9;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .overlay {
+    background: rgba(22, 22, 22, 0.8);
+  }
+  .modelcontent {
+    position: fixed;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: auto;
+    z-index: 2;
+
+    box-shadow: 0 0 12px 8px rgba(223, 217, 217, 0.2);
+  }
+  .story {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 10px;
+    transition: 0.1s;
+    overflow: hidden;
+  }
+  .story > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transition: 0.1s;
+    overflow: hidden;
+  }
+  .storyheading {
+    position: relative;
+    color: white;
+    bottom: 30vh;
+    left: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .storyheading > h2 {
+    position: relative;
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+
+  .storyheading > h4 {
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .share {
+    position: relative;
+    bottom: 97.5vh;
+    left: 86.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .share:active {
+    scale: 0.9;
+  }
+  .like {
+    position: relative;
+    bottom: 8vh;
+    left: 72.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+    height: 4vh;
+  }
+  .like:active {
+    scale: 0.9;
+  }
+  .unlike {
+    position: relative;
+    bottom: 8vh;
+    left: 72.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+    height: 4vh;
+  }
+  .unlike:active {
+    scale: 0.9;
+  }
+  .bookmark {
+    position: relative;
+    bottom: 8.5vh;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.1s;
+  }
+  .bookmark:active {
+    scale: 0.9;
+  }
+
+  .close {
+    position: relative;
+    bottom: 98vh;
+    right: 14vw;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.1s;
+  }
+  .close:active {
+    scale: 0.9;
+  }
+  .likecount {
+    position: relative;
+    bottom: 11vh;
+    font-size: medium;
+    left: 45vh;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.1s;
+    color: aliceblue;
+    z-index: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  .previous {
+    position: relative;
+    left: 0vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .previous:active {
+    scale: 0.9;
+  }
+
+  .nprevious {
+    height: min-content;
+    height: 4vh;
+  }
+  .next {
+    position: absolute;
+    right: 0vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 8;
+  }
+  .next:active {
+    scale: 0.9;
+  }
+  .right {
+    height: 100vh;
+    width: 20vh;
+    top: 0vh;
+    position: absolute;
+    right: 0vh;
+    z-index: 1;
+  }
+  .left {
+    height: 100vh;
+    width: 20vh;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}

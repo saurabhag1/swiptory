@@ -1,0 +1,72 @@
+/* Default styles for smaller screens (mobile-first) */
+
+.navbar {
+  height: 10vh;
+  width: auto;
+  background-color: white;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-family: sans-serif;
+  position: relative;
+  left: 3vw;
+  top: 2vh;
+  font-weight: 700;
+  width: min-content;
+}
+
+/* ... other existing styles */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    height: 12vh; /* Adjusted height for better visibility */
+    padding: 0 1rem; /* Increase padding for better spacing */
+  }
+
+  .heading {
+    left: 1rem; /* Adjusted left position */
+    top: 1.5rem; /* Adjusted top position */
+    font-size: 1.5rem; /* Larger font size for better readability */
+  }
+
+  /* Update other styles for smaller screens here */
+  .buttons {
+    display: flex;
+    gap: 1.5vh;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+
+  .Registerbutton,
+  .Loginbutton {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+
+  .afterlogginbutton1 {
+    display: flex;
+    gap: 1vw;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+
+  .Bookmarkbutton,
+  .Addstorybutton {
+    width: 30%; /* Adjusted button width for better fit */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .sidemenu {
+    width: 3vh;
+    height: 3vh;
+    top: 0.8vh;
+    position: absolute;
+    right: 3vh;
+    top: 5vh;
+  }
+}

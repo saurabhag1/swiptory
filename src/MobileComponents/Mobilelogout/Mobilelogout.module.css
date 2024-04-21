@@ -1,0 +1,171 @@
+.logoutbox {
+  position: absolute;
+  right: 0;
+  top: 12.5vh;
+  z-index: 5;
+  width: 100%;
+  text-align: right;
+
+}
+
+.overlay {
+  display: none; /* Not needed for mobile view */
+}
+
+.logoutdetails {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 4px 4px 8px 7px rgba(134, 128, 128, 0.2);
+}
+
+.usernamebox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  gap: 2vh;
+  position: relative;
+  right: 4vh;
+}
+
+.username {
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: min-content;
+  position: relative;
+  top: 3vh;
+}
+
+.logoutdetails > button {
+  background-color: #ff7373;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 30%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logoutdetails > button:hover {
+  transform: scale(1.05);
+}
+
+.logoutdetails > button:active {
+  transform: scale(0.95);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.Registerbutton {
+  background-color: #ff7373;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 50vw;
+  cursor: pointer;
+  padding: 1vh;
+  transition: 0.2s;
+}
+.Registerbutton:active,
+.Loginbutton:active {
+  scale: 0.9;
+}
+.Loginbutton {
+  background-color: #73abff;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 50vw;
+  cursor: pointer;
+  padding: 1vh;
+  transition: 0.2s;
+}
+.afterlogginbutton {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.Bookmarkbutton {
+  display: flex;
+  gap: 1.5vh;
+  background-color: #ff7373;
+  border: none;
+  height: 5.5vh;
+  border-radius: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  width: 60vw;
+  padding-left: 1.5vh;
+  transition: 0.2s;
+}
+.Bookmarkbutton > img {
+  height: 2.5vh;
+  position: relative;
+  top: 1.5vh;
+  left: 5vh;
+}
+.Bookmarkbutton > p {
+  position: relative;
+  top: 0.7vh;
+  left: 7vh;
+}
+.Addstorybutton {
+  background-color: #ff7373;
+  border: none;
+  height: 5.5vh;
+  border-radius: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  width: 60vw;
+  transition: 0.1s;
+}
+.Bookmarkbutton:hover,
+.Addstorybutton:hover,.logoutbutton:hover {
+  background-color: #fd5050;
+  cursor: pointer;
+}
+.Bookmarkbutton:active,
+.Addstorybutton:active, .logoutbutton:active {
+  scale: 0.9;
+}
+
+.logoutbutton {
+  background-color: #ff7373;
+  border: none;
+  height: 5.5vh;
+  border-radius: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  width: 60vw;
+  transition: 0.2s;
+}
