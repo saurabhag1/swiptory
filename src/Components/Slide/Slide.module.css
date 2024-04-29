@@ -1,173 +1,4 @@
 .overlay {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  z-index: 1;
-}
-
-.overlay {
-  background: rgba(22, 22, 22, 0.8);
-}
-.modelcontent {
-  position: fixed;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  width: auto;
-  z-index: 2;
-
-  box-shadow: 0 0 12px 8px rgba(223, 217, 217, 0.2);
-}
-.story {
-  height: 80vh;
-  width: 26vw;
-  border-radius: 10px;
-  transition: 0.1s;
-  overflow: hidden;
-}
-.story > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  border-radius: 10px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  transition: 0.1s;
-  overflow: hidden;
-}
-.storyheading {
-  position: relative;
-  color: white;
-  bottom: 25vh;
-  left: 3vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.storyheading > h2 {
-  position: relative;
-  text-transform: uppercase;
-  color: aliceblue;
-}
-
-.storyheading > h4 {
-  position: relative;
-  width: 19vw;
-  display: flex;
-  flex-wrap: wrap;
-  height: 20vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.share {
-  position: relative;
-  bottom: 78vh;
-  left: 22.5vw;
-  transition: 0.1s;
-  cursor: pointer;
-  z-index: 1;
-}
-.share:active {
-  scale: 0.9;
-}
-.like {
-  position: relative;
-  bottom: 8vh;
-  left: 18.5vw;
-  transition: 0.1s;
-  cursor: pointer;
-  z-index: 1;
-  height: 4vh;
-}
-.like:active {
-  scale: 0.9;
-}
-.unlike {
-  position: relative;
-  bottom: 8vh;
-  left: 18.5vw;
-  transition: 0.1s;
-  cursor: pointer;
-  z-index: 1;
-  height: 4vh;
-}
-.unlike:active {
-  scale: 0.9;
-}
-.bookmark {
-  position: relative;
-  bottom: 7vh;
-  right: 2.5vw;
-  cursor: pointer;
-  z-index: 1;
-  transition: 0.1s;
-}
-.bookmark:active {
-  scale: 0.9;
-}
-
-.close {
-  position: relative;
-  bottom: 79vh;
-  right: 4vw;
-  cursor: pointer;
-  z-index: 1;
-  transition: 0.1s;
-}
-.close:active {
-  scale: 0.9;
-}
-.likecount {
-  position: relative;
-  bottom: 11vh;
-  font-size: medium;
-  left: 48vh;
-  cursor: pointer;
-  z-index: 1;
-  transition: 0.1s;
-  color: aliceblue;
-  z-index: 1;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.previous {
-  position: relative;
-  top: 45vh;
-  left: 29vw;
-  transition: 0.1s;
-  cursor: pointer;
-}
-.previous:active {
-  scale: 0.9;
-}
-.next {
-  position: absolute;
-  right: 31vw;
-  top: 45vh;
-  transition: 0.1s;
-  cursor: pointer;
-}
-.next:active {
-  scale: 0.9;
-}
-
-
-@media only screen and (max-width: 767px) {
-  .overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -176,32 +7,33 @@
     bottom: 0;
     position: fixed;
     z-index: 1;
-  }
+}
 
-  .overlay {
+.overlay {
     background: rgba(22, 22, 22, 0.8);
-  }
-  .modelcontent {
+}
+
+.modelcontent {
     position: fixed;
     height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: aliceblue;
     border-radius: 10px;
     width: auto;
     z-index: 2;
-
     box-shadow: 0 0 12px 8px rgba(223, 217, 217, 0.2);
-  }
-  .story {
-    height: 100vh;
-    width: 100vw;
+}
+
+.story {
+    height: 80vh;
+    width: 26vw;
     border-radius: 10px;
     transition: 0.1s;
     overflow: hidden;
-  }
-  .story > img {
+}
+
+.story>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -214,146 +46,407 @@
     z-index: 0;
     transition: 0.1s;
     overflow: hidden;
-  }
-  .storyheading {
+}
+
+.storyheading {
     position: relative;
     color: white;
-    bottom: 30vh;
+    bottom: 25vh;
     left: 3vh;
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-  .storyheading > h2 {
+.storyheading>h2 {
     position: relative;
     text-transform: uppercase;
     color: aliceblue;
-  }
+}
 
-  .storyheading > h4 {
+.storyheading>h4 {
     position: relative;
-    width: auto;
+    width: 19vw;
     display: flex;
     flex-wrap: wrap;
     height: 20vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
-  .share {
-    position: relative;
-    bottom: 97.5vh;
-    left: 86.5vw;
-    transition: 0.1s;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .share:active {
-    scale: 0.9;
-  }
-  .like {
-    position: relative;
-    bottom: 8vh;
-    left: 72.5vw;
-    transition: 0.1s;
-    cursor: pointer;
-    z-index: 1;
-    height: 4vh;
-  }
-  .like:active {
-    scale: 0.9;
-  }
-  .unlike {
-    position: relative;
-    bottom: 8vh;
-    left: 72.5vw;
-    transition: 0.1s;
-    cursor: pointer;
-    z-index: 1;
-    height: 4vh;
-  }
-  .unlike:active {
-    scale: 0.9;
-  }
-  .bookmark {
-    position: relative;
-    bottom: 8.5vh;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.1s;
-  }
-  .bookmark:active {
-    scale: 0.9;
-  }
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-  .close {
+.share {
     position: relative;
-    bottom: 98vh;
-    right: 14vw;
+    bottom: 78vh;
+    left: 22.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.share:active {
+    scale: 0.9;
+}
+
+.like {
+    position: relative;
+    bottom: 8vh;
+    left: 18.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+    height: 4vh;
+}
+
+.like:active {
+    scale: 0.9;
+}
+
+.unlike {
+    position: relative;
+    bottom: 8vh;
+    left: 18.5vw;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 1;
+    height: 4vh;
+}
+
+.unlike:active {
+    scale: 0.9;
+}
+
+.bookmark {
+    position: relative;
+    bottom: 7vh;
+    right: 2.5vw;
     cursor: pointer;
     z-index: 1;
     transition: 0.1s;
-  }
-  .close:active {
+}
+
+.bookmark:active {
     scale: 0.9;
-  }
-  .likecount {
+}
+
+.close {
+    position: relative;
+    bottom: 79vh;
+    right: 4vw;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.1s;
+}
+
+.close:active {
+    scale: 0.9;
+}
+
+.likecount {
     position: relative;
     bottom: 11vh;
     font-size: medium;
-    left: 45vh;
+    left: 48vh;
     cursor: pointer;
     z-index: 1;
     transition: 0.1s;
     color: aliceblue;
     z-index: 1;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-  .previous {
+.previous {
     position: relative;
-    left: 0vw;
+    top: 45vh;
+    left: 29vw;
     transition: 0.1s;
     cursor: pointer;
-    z-index: 5;
-  }
-  .previous:active {
-    scale: 0.9;
-  }
+}
 
-  .nprevious {
-    height: min-content;
-    height: 4vh;
-  }
-  .next {
+.previous:active {
+    scale: 0.9;
+}
+
+.next {
     position: absolute;
-    right: 0vw;
+    right: 31vw;
+    top: 45vh;
     transition: 0.1s;
     cursor: pointer;
-    z-index: 8;
-  }
-  .next:active {
+}
+
+.next:active {
     scale: 0.9;
-  }
-  .right {
-    height: 100vh;
-    width: 20vh;
-    top: 0vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        z-index: 1;
+    }
+    .overlay {
+        background: rgba(22, 22, 22, 0.8);
+    }
+    .modelcontent {
+        position: fixed;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: auto;
+        z-index: 2;
+        box-shadow: 0 0 12px 8px rgba(223, 217, 217, 0.2);
+    }
+    .story {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 10px;
+        transition: 0.1s;
+        overflow: hidden;
+    }
+    .story>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        transition: 0.1s;
+        overflow: hidden;
+    }
+    .storyheading {
+        position: relative;
+        color: white;
+        bottom: 30vh;
+        left: 3vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .storyheading>h2 {
+        position: relative;
+        text-transform: uppercase;
+        color: aliceblue;
+    }
+    .storyheading>h4 {
+        position: relative;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        height: 20vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .share {
+        position: relative;
+        bottom: 97.5vh;
+        left: 86.5vw;
+        transition: 0.1s;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .share:active {
+        scale: 0.9;
+    }
+    .like {
+        position: relative;
+        bottom: 8vh;
+        left: 72.5vw;
+        transition: 0.1s;
+        cursor: pointer;
+        z-index: 1;
+        height: 4vh;
+    }
+    .like:active {
+        scale: 0.9;
+    }
+    .unlike {
+        position: relative;
+        bottom: 8vh;
+        left: 72.5vw;
+        transition: 0.1s;
+        cursor: pointer;
+        z-index: 1;
+        height: 4vh;
+    }
+    .unlike:active {
+        scale: 0.9;
+    }
+    .bookmark {
+        position: relative;
+        bottom: 8.5vh;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.1s;
+    }
+    .bookmark:active {
+        scale: 0.9;
+    }
+    .close {
+        position: relative;
+        bottom: 98vh;
+        right: 14vw;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.1s;
+    }
+    .close:active {
+        scale: 0.9;
+    }
+    .likecount {
+        position: relative;
+        bottom: 11vh;
+        font-size: medium;
+        left: 45vh;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.1s;
+        color: aliceblue;
+        z-index: 1;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .previous {
+        position: relative;
+        left: 0vw;
+        transition: 0.1s;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .previous:active {
+        scale: 0.9;
+    }
+    .nprevious {
+        height: min-content;
+        height: 4vh;
+    }
+    .next {
+        position: absolute;
+        right: 0vw;
+        transition: 0.1s;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .next:active {
+        scale: 0.9;
+    }
+    .right {
+        height: 100vh;
+        width: 20vh;
+        top: 0vh;
+        position: absolute;
+        right: 0vh;
+        z-index: 1;
+    }
+    .left {
+        height: 100vh;
+        width: 20vh;
+        top: 0;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+
+/* 
+
+:root {
+  --background-color: #1b1d20;
+  --slide-width: 344px;
+  --slide-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
+  --slide-thumb-height: 3px;
+  --slide-thumb-default-color: rgba(0, 0, 0, 0.4);
+  --slide-thumb-active-color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+} */
+
+.slide {
+    box-shadow: var(--slide-width);
+    display: grid;
+    margin: 20px auto;
+    max-width: var(--slide-width);
+}
+
+.slide-items {
+    border-radius: 5px;
+    grid-area: 1/1;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-items>* {
+    opacity: 0;
+    pointer-events: none;
     position: absolute;
-    right: 0vh;
-    z-index: 1;
-  }
-  .left {
-    height: 100vh;
-    width: 20vh;
     top: 0;
-    position: absolute;
+}
+
+.slide-items .active {
+    opacity: 1;
+    pointer-events: initial;
+    position: relative;
+}
+
+.slide-nav {
+    display: grid;
+    grid-area: 1/1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     z-index: 1;
-  }
+}
+
+.slide-thumbs {
+    display: flex;
+    grid-column: 1 / 3;
+}
+
+.slide-thumb-item {
+    background-color: var(--slide-thumb-default-color);
+    border-radius: 3px;
+    display: block;
+    flex: 1;
+    height: var(--slide-thumb-height);
+    margin: 5px;
+    overflow: hidden;
+}
+
+.slide-thumb-item.active::after {
+    animation: thumb 5s forwards linear;
+    background-color: var(--slide-thumb-active-color);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: inherit;
+    transform: translateX(-100%);
+}
+
+.slide-next,
+.slide-prev {
+    opacity: 0;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes thumb {
+    to {
+        transform: initial;
+    }
 }

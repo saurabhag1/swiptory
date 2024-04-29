@@ -49,7 +49,7 @@ function Bookmark() {
         },
       })
       .then((res) => {
-        console.log(res.data);
+        
         setbookData(res.data.bookmarks);
       })
       .catch((err) => {
@@ -57,7 +57,7 @@ function Bookmark() {
       });
   }, []);
 
-  console.log(bookData);
+  
   const isMobile = useMediaQuery({
     minWidth: 300,
     maxWidth: 600,

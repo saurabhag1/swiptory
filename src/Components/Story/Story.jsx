@@ -68,18 +68,16 @@ function Story() {
     "Travel",
     "Movies",
   ];
-  console.log(active);
+  // console.log(active);
   useEffect(() => {
     axios
       .get(`${import.meta.env.VITE_BACKENDURL}/filter/${active}`)
       .then((res) => {
-        console.log(res.data.posts);
-        console.log(res.data);
         setcategory(res.data);
         setstory(res.data.posts);
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
       });
   }, [active]);
 
@@ -91,7 +89,7 @@ function Story() {
         );
         return filtered;
       });
-      console.log(mystory);
+      // console.log(mystory);
       const allslides = story.reduce((acc, val) => {
         const everyslide = acc.concat(val.slides);
         return everyslide;
@@ -113,27 +111,27 @@ function Story() {
         Movies: Movies,
         Education: Education,
       });
-      console.log(allcategory);
+      // console.log(allcategory);
       const flattened = mystory?.reduce((acc, val) => acc.concat(val), []);
 
-      console.log(flattened);
+      // console.log(flattened);
       setcategorydata(flattened);
       const UserPostedStory = story.filter(
         (slide) => slide.postedBy === localStorage.getItem("userid")
       );
-      console.log(UserPostedStory);
+      // console.log(UserPostedStory);
       const allUserPostedStory = UserPostedStory.reduce((acc, val) => {
         const everyslide = acc.concat(val.slides);
         return everyslide;
       }, []);
-      console.log(allUserPostedStory);
+      // console.log(allUserPostedStory);
       setUserStory(UserPostedStory);
-      console.log(UserPostedStory);
+      // console.log(UserPostedStory);
     }
   }, [active, story]);
 
   if (categorydata) {
-    console.log(categorydata);
+    // console.log(categorydata);
   }
   const handleseemore = () => {
     setmaxstory(Infinity);
@@ -166,8 +164,8 @@ function Story() {
   };
 
   if (slidedata) {
-    console.log(slidedata);
-    console.log(currentindex);
+    // console.log(slidedata);
+    // console.log(currentindex);
   }
   useEffect(() => {
     if (slide) {
@@ -176,14 +174,14 @@ function Story() {
         .then((res) => {
           setslidedata(res.data);
           setshareData(res.data);
-          console.log(res.data);
+          // console.log(res.data);
         })
         .catch((err) => {
           console.log(err);
         });
     }
   }, [slide]);
-  console.log(shareData);
+  // console.log(shareData);
   return (
     <div className={style.Story}>
       {showedit ? <Editjob onclickedit={onclickedit} /> : ""}

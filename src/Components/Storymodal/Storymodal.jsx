@@ -87,7 +87,7 @@ function Storymodal({ onclickstory }) {
         });
     }
   }, [slidedata, currentindex]);
-  console.log(loggedin);
+  // console.log(loggedin);
 
   const handlelike = () => {
     if (loggedin) {
@@ -104,7 +104,7 @@ function Storymodal({ onclickstory }) {
           }
         )
         .then(async (res) => {
-          console.log(res.data);
+          
           const updatedSlide = await axios.get(
             `${import.meta.env.VITE_BACKENDURL}/slide/${
               slidedata[currentindex]._id
@@ -142,7 +142,7 @@ function Storymodal({ onclickstory }) {
           }
         )
         .then(async (res) => {
-          console.log(res.data);
+          
           const updateduser = await axios.get(
             `${import.meta.env.VITE_BACKENDURL}/user/${localStorage.getItem(
               "userid"
@@ -183,7 +183,7 @@ function Storymodal({ onclickstory }) {
     if (userInfo && userInfo.bookmarks) {
       setisbookmarked(userInfo.bookmarks.includes(slidedata[currentindex]._id));
     }
-    console.log(userInfo);
+    
   }, [userInfo, currentindex]);
 
   return (
