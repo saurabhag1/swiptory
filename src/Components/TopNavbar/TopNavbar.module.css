@@ -96,7 +96,8 @@
   font-weight: 500;
   font-size: medium;
   width: fit-content;
-  padding-left: 1.5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   transition: 0.2s;
 }
 .Bookmarkbutton > img {
